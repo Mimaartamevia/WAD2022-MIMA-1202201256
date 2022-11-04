@@ -35,32 +35,32 @@
             </tr>
         </thead>
         <tbody>
-            <? 
+            <php
             if($_POST['Namalengkap']!=null){ 
-              echo'<tr>'; 
-              echo'<td>'.rand(10000000,50000000).'</td>'; 
-              echo'<td>'.$_POST['Namalengkap'].'</td>';
-              echo'<td>'.$_POST['Tanggal_Pemesanan'].' '.$_POST['Waktu_pesan'].'</td>';
-              echo'<td>'.date('Y-m-d',strtotime($_POST['Tanggal_Pemesanan'].'+'.$_POST['Durasi_Pesanan'].'days')).' '.$_POST['Waktu_pesan'].'</td>';
-              echo'<td>'.$_POST['Jenis_mobil'].'</td>';
-              echo'<td>'.$_POST['Nomor_telepon'].'</td>';
-              echo'<td><ul>';
+              <tr>
+                <td>.rand(10000000,50000000)</td>
+                <td>.$_POST['Namalengkap'].</td>
+                <td>.$_POST['Tanggal_Pemesanan'].' '.$_POST['Waktu_pesan'].</td>
+                <td>.date('Y-m-d',strtotime($_POST['Tanggal_Pemesanan'].'+'.$_POST['Durasi_Pesanan'].'days')).' '.$_POST['Waktu_pesan'].</td>
+                <td>.$_POST['Jenis_mobil'].</td>
+                <td>.$_POST['Nomor_telepon'].</td>
+                <td><ul>
               foreach($_POST['Pelayanan_tambahan'] as $Rp){
                 switch ($Rp){
                   case '25000':
-                    echo '<li>Health Protocol</li>';
+                    echo <li>Health Protocol</li>;
                     break;
                 case '100000':
-                    echo '<li>Driver</li>';
+                    echo <li>Driver</li>;
                     break;
                 case '250000':
-                    echo '<li>Full filled</li>';        
+                    echo <li>Full filled</li>;        
                     break;                
                 default:
-                    echo '';
+                    echo ;
             }
-            echo "</td></ul>";
-            echo "<td>";
+            </td></ul>
+            <td>
             switch ($_POST['Jenis_mobil']){
               case"Xpander":
                 $harga=250000;
@@ -76,9 +76,9 @@
                 foreach ($_POST['Pelayanan_tambahan'] as $Rp){
                     $harga+=(int)$Rp;
                 }
-                echo"Rp".$harga;
+                "Rp".$harga;
                 break;
-              case "Mobilio":
+              case "Mobilio";
                 $harga=250000;
                 $harga=$harga*$_POST['Durasi_Pesanan'];
                 foreach ($_POST['Pelayanan_tambahan'] as $Rp){

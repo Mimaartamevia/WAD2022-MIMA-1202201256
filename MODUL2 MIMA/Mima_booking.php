@@ -30,7 +30,7 @@
                         elseif($_GET['mobil']=='Mobilio'){
                             echo '<img width="250" height="150" src="https://www.semisena.com/wp-content/uploads/2020/02/Honda-Mobilio-F.jpg"></img>';
                         }
-                    
+                    }
                     else{
                         echo '<img width="250" height="150"" src="https://assets.mitsubishi-motors.co.id/products/colors/1642040743-cross-black-at-2x-minpng.png"></img>';
                     }

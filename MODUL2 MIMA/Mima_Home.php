@@ -70,7 +70,7 @@
                                 7 tempat duduk<br>
                                 Manual 
                                 </p></b>
-                                <a class="btn btn-primary" href="Mima_booking.php?mobil=<?php ecsho 'Mobilio' ?>">Book Now!</a>
+                                <a class="btn btn-primary" href="Mima_booking.php?mobil=<?php echo 'Mobilio' ?>">Book Now!</a>
                             </center>
                         </div>
                     </div>
