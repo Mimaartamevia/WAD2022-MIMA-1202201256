@@ -1,7 +1,7 @@
         <?php
                 $connect = mysqli_connect("localhost:3315", "root","", "modul3");
                 $id=$_GET['id'];
-                $query=mysqli_query($connect, "SELECT  FROM showroom_mima_table WHERE id_mobil=$id");
+                $query=mysqli_query($connect, "SELECT * FROM showroom_mima_table WHERE id_mobil=$id");
                 $selects=mysqli_fetch_array($query);
             ?>
             <h1><b>Edit</b></h1>

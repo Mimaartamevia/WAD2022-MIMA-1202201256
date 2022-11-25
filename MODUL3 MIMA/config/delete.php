@@ -1,7 +1,7 @@
         <?php
             $connect = mysqli_connect("localhost:3315", "root","", "modul3");
             $id=$_GET['id'];
-            $query = mysqli_query($connect, "DELETE showroom_mima_table WHERE id_mobil='$id'");
+            $query = mysqli_query($connect, "DELETE FROM showroom_mima_table WHERE id_mobil='$id'");
             header("Location:../pages/ListCar-Mima.php?");
 
             if($query) {

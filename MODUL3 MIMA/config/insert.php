@@ -13,7 +13,7 @@
       $query = mysqli_query($connect, "INSERT INTO showroom_mima_table(nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran)
                                         VALUES ('$nama_mobil', '$pemilik_mobil', '$merk_mobil', '$tanggal_beli', '$deskripsi', '$foto_mobil', '$status_pembayaran')");
       
-      if($querys) {
+      if($query) {
         echo "<script>alert('Data telah ditambahkan')</script>";
         echo"<meta http-equiv='refresh' content='1 url=../pages/ListCar-Mima.php'>";
       } else {
