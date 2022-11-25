@@ -16,24 +16,26 @@
       </ul>
   </div>
 </nav>
+<h1 class="text-left">My Show Room</h1>
+<p style="font-family:courier;">List Show Room Mima_1202201256</p>
 <?php
-        $connect = mysqli_connect("localhost:3315", "root","", "modul3");
-        $query=mysqli_query($connect, "SELECT * FROM showroom_mima_table");
-        foreach ($query as $tampil):?>
-            <div class='row row-cols-2 row-cols-md-2 g-4'>
-                <div class='col'>
-                    <div class='card'>
-                        <img class='card-img-top' width='340' height='210' src='../asset/image/<?php echo $tampil['foto_mobil']?> 'alt='No Image'></img>
-                        <div class='card-body>";
-                            <h5 class='card-title><center><b><?php echo $tampil['nama_mobil']?></b></center></h5>
-                            <p class='card-text'><?php echo substr($tampil['deskripsi'], 0, 50)?>...</p>
-                            <a href='../pages/Details-Mima.php?id=<?php echo $tampil['id_mobil']?>' button class='btn btn-primary' type='Details'>Detail</a>
-                            <a href='../config/delete.php' button class='btn btn-danger' type='Delete'>Delete</a>
-                        </div>
+    $connect = mysqli_connect("localhost:3315", "root","", "modul3");
+    $query=mysqli_query($connect, "SELECT * FROM showroom_mima_table");
+    foreach ($query as $tampil):?>
+        <div class='row row-cols-3 row-cols-md-3 g-4'>
+            <div class='col'>
+                <div class='card'>
+                    <img class='card-img-top' width='340' height='210' src='../asset/image/<?php echo $tampil['foto_mobil']?> 'alt='No Image'></img>
+                    <div class='card-body>";
+                        <h5 class='card-title><center><b><?php echo $tampil['nama_mobil']?></b></center></h5>
+                        <p class='card-text'><?php echo substr($tampil['deskripsi'], 0, 60)?>...</p>
+                        <a href='../pages/Details-Mima.php?id=<?php echo $tampil['id_mobil']?>' button class='btn btn-primary' type='Details'>Detail</a>
+                        <a href='../config/delete.php?id=<?php echo $tampil['id_mobil']?>' button class='btn btn-danger' type='Delete'>Delete</a>
                     </div>
                 </div>
             </div>
-        <?php endforeach; ?>
+        </div>
+    <?php endforeach; ?>
 
 <?php
   include('../config/connector.php');

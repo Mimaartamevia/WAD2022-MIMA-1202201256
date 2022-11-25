@@ -27,7 +27,7 @@
     <a class ="btn btn-primary" href="ListCar-Mima.php" >MyCar</a><br>
         <br>
         <div class="d-flex left">
-        <img src="../asset/logo-ead.png" alt="" style="width:100px;height:30px;float:left" /><p>Mima_1202201256</p>       
+        <img src="../asset/logo-ead.png" alt="" style="width:100px;height:30px;float:left" /><p>Mima_1202201256</p>      
     </div>
     </div>
     <div class="col-6 text-center">

@@ -27,7 +27,7 @@
     <div class="col-6 text-left">
     
     <div class="container">
-        <from action="postoutput.php" method="POST">
+        <from action="../config/insert.php" method="POST">
 
     <div class="mb-3">
 		<label for="namamobil"><b>Nama Mobil</label>
@@ -70,9 +70,8 @@
 
      <div class="mb-3">
         <div class="d-flex left">
-        <a class ="btn btn-primary" href="../pages/ListCar-Mima.php" >Simpan</a>               
+        <a class ="btn btn-primary" href="../pages/ListCar-Mima.php">Simpan</a>               
     </div>
     </div>
-    
                   
 </div>
