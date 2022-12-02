@@ -8,8 +8,7 @@
             setcookies("email",$email,time()+3600);
             setcookie("password",$password,time()+3600);
         }
-
-        $connect = mysqli_connect("localhost", "root","", "wad_modul4_mima");
+        $connect = mysqli_connect("localhost:3315", "root","", "wad_modul4_mima");
         $email=$_POST['email'];
         $password=$_POST['password'];
         $dt_email="SELECT * FROM user_mima WHERE email='$email'";

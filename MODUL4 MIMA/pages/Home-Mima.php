@@ -10,7 +10,7 @@
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <?php if (isset($_SESSION['login'])  $_SESSION['login'] == 'Berhasil!') { unset($_SESSION['login'])?>
+    <?php if (isset($_SESSION['login']) && $_SESSION['login'] == 'Berhasil!'){unset($_SESSION['login'])?>
         <div class="alert alert-warning alert-dismissible" role="alert">Anda berhasil login!
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -31,7 +31,7 @@
             <li class="nav-item "><a href='../pages/Add-Mima.php' button class='btn btn-light'>AddCar</a></li>
             <div class="dropdown">
       <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Nama
+
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="../pages/Profile-Mima.php">Profil</a></li>
