@@ -41,3 +41,5 @@ Route::get('/addcar', function () {
     return view('Add-Mima');
 });
 Route::resource('/showroom',ShowroomsController::class );
+Route::resource('/login',LoginController::class );
+Route::resource('/register',RegisterController::class );

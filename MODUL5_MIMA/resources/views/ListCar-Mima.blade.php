@@ -13,8 +13,8 @@
 <nav class="navbar navbar-expand-lg bg-primary " >
   <div class=" d-flex justify-content-left container-fluid">
       <ul class="navbar-nav">
-        <li class="nav-item" ><a class="nav-link " href="Home-Mima.php" style="color:white;" >Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Add-Mima.php" style="color:white;" >MyCar</a></li>
+        <li class="nav-item" ><a class="nav-link " href="/" style="color:white;" >Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/showroom" style="color:white;" >MyCar</a></li>
       </ul>
   </div>
 </nav>
@@ -23,11 +23,11 @@
 @foreach ( $showrooms as $showroom )
     <div class='row row-cols-3 row-cols-md-3 g-4'>
         <div class='col'>
-            <div class='card'>
-                <img class='card-img-top' width='340' height='210' src='/gambar/{{$showroom -> image }}'alt='No Image'></img>
-                <div class='card-body>";
-                    <h5 class='card-title><center><b>{{ $showroom -> name }}</b></center></h5>
-                    <p class='card-text'></p>
+            <div class="card" style = "width: 18rem;">
+                <img class='card-img-top' width='340' height='210' src='/image/{{$showroom -> image }}'alt='No Image'></img>
+                <div class="card-body">
+                    <h5 class="card-title"><center><b>{{ $showroom -> name }}</b></center></h5>
+                    <p class='card-text'><left><b>{{ $showroom -> description }}</b></left></p>
                     <a href='' button class='btn btn-primary' type='Details'>Detail</a>
                     <a href='' button class='btn btn-danger' type='Delete'>Delete</a>
                 </div>

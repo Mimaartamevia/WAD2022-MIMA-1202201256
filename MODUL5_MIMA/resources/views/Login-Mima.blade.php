@@ -38,7 +38,7 @@
         </div>
     </form>
 </div>
-<h6 class="mb-4" style="text-align : left;" > Anda belum punya akun ?<a href="/registrasi">Daftar</a></h6> <br>
+<h6 class="mb-4" style="text-align : left;" > Anda belum punya akun ?<a href="/register">Daftar</a></h6> <br>
    
 </body>
 </html>

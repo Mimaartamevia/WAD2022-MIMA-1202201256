@@ -9,11 +9,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg bg-primary " >
+      <nav class="navbar navbar-expand-lg bg-primary" >
       <div class=" d-flex justify-content-left container-fluid">
           <ul class="navbar-nav">
-            <li class="nav-item" ><a class="nav-link " href="../pages/Home-Mima" style="color:white;" >Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/List-Mima" style="color:white;" >MyCar</a></li>
+            <li class="nav-item" ><a class="nav-link " href="/" style="color:white;" >Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/showroom" style="color:white;" >MyCar</a></li>
           </ul>
       </div>
       <div class=" d-flex justify-content-right container-right">
@@ -30,7 +30,7 @@
         <p style="font-size:90%" style="color:DDDDDD;"> At lacus vitae nulla sagittis scelerisque nisl. Pallentsquue duis cursus vestibulum, facilisi ac, sed faucibus.</p>
         <br>
         <br>
-        <a class ="btn btn-primary" href="ListCar-Mima.php" >MyCar</a><br>
+        <a class ="btn btn-primary" href="/showroom/create" >MyCar</a><br>
             <br>
             <div class="d-flex left">
             <img src="gambar/logo-ead.png" alt="" style="width:100px;height:30px;float:left" /><p>Mima_1202201256</p>      

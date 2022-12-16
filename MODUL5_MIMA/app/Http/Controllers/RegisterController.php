@@ -11,15 +11,14 @@ class RegisterController extends Controller
     public function index(){
         return view('Registrasi-Mima');
     }
-    public function kirim(Request $request)
+    public function store(Request $request)
     {
-        $masuk = $request->validate([
-            'name' => 'string',
-            'email' => 'string',
-            'password' => 'string',
-            'no_hp' => 'string',
+        User::create([
+            'name' => $request -> name,
+            'email' => $request -> email,
+            'password' => $request -> password,
+            'no_hp' => $request -> no_hp
         ]);
-        User::create($masuk);
         return redirect('/login');
     }
 }

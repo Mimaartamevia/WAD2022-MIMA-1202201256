@@ -12,8 +12,8 @@
 <nav class="navbar navbar-expand-lg bg-primary " >
   <div class=" d-flex justify-content-left container-fluid">
       <ul class="navbar-nav">
-        <li class="nav-item" ><a class="nav-link " href="Home-Mima.php" style="color:white;" >Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Add-Mima.php" style="color:white;" >MyCar</a></li>
+        <li class="nav-item" ><a class="nav-link " href="/" style="color:white;" >Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/showroom" style="color:white;" >MyCar</a></li>
       </ul>
   </div>
 </nav>
