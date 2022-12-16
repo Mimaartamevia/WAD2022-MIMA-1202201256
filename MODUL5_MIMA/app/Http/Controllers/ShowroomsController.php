@@ -7,7 +7,7 @@ use App\Models\Showroom;
 
 class ShowroomsController extends Controller
 {
-    public function indeks ()
+    public function index ()
     {
         $showrooms = Showroom::orderBy('id')->get();
         return view('ListCar-Mima', compact ("showrooms"));
