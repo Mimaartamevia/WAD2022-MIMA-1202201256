@@ -17,7 +17,7 @@ use App\Http\Controllers\ShowroomsController;
 */
 
 Route::get('/', function () {
-    return view('Home-Mima');
+    return view('Home');
 });
 Route::get('/login',[LoginController::class, 'index']);
 // Route::get('/login', function () {
